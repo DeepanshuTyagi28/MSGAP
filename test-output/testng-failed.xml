@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="SheetName" value="Regression"/>
+  <listeners>
+    <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.ttn.MSGA.testcases.InsertAccEnquiryTest">
+        <methods>
+          <include name="startReporting"/>
+          <include name="insertAccEnquiry_Blank_P_PHONE" invocation-numbers="0"/>
+          <include name="insertAccEnquiry_Invalid_P_ENQ_DATE" invocation-numbers="0"/>
+          <include name="insertAccEnquiry_Blank_P_ENQ_DATE" invocation-numbers="0"/>
+          <include name="insertAccEnquiry_Invalid_P_LOC_CD" invocation-numbers="0 1 2 3 4"/>
+          <include name="setPassword"/>
+          <include name="insertAccEnquiry_Blank_P_APPOINT_TIME" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="insertAccEnquiry_Invalid_P_DEALER_MAP_CD" invocation-numbers="0 1 2 3 4"/>
+          <include name="setAccessToken"/>
+          <include name="before"/>
+          <include name="insertAccEnquiry_Invalid_P_PARENT_GROUP" invocation-numbers="0 1 2 3 4"/>
+          <include name="insertAccEnquiry_Blank_P_DEALER_MAP_CD" invocation-numbers="0"/>
+          <include name="insertAccEnquiry_Blank_P_PARENT_GROUP" invocation-numbers="0"/>
+          <include name="insertAccEnquiry_Blank_P_SOURCE" invocation-numbers="0"/>
+          <include name="reportClosure"/>
+          <include name="insertAccEnquiry_Blank_P_CUST_FNAME" invocation-numbers="0"/>
+          <include name="insertAccEnquiry_Blank_P_MODE" invocation-numbers="0"/>
+          <include name="insertAccEnquiry_Blank_P_LOC_CD" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.ttn.MSGA.testcases.InsertAccEnquiryTest -->
+      <class name="com.ttn.MSGA.testcases.InsertAccOrdTest">
+        <methods>
+          <include name="startReporting"/>
+          <include name="insertAccOrd_Blank_P_PARENT_GROUP" invocation-numbers="0"/>
+          <include name="insertAccOrd_Blank_P_SOURCE" invocation-numbers="0"/>
+          <include name="setPassword"/>
+          <include name="tearDown"/>
+          <include name="insertAccOrd_Blank_P_TOTAL_AMT" invocation-numbers="0"/>
+          <include name="setAccessToken"/>
+          <include name="before"/>
+          <include name="insertAccOrd_Invalid_P_ORDER_DATE" invocation-numbers="0"/>
+          <include name="insertAccOrd_Blank_P_ORDER_DATE" invocation-numbers="0"/>
+          <include name="insertAccOrd_Invalid_P_PARENT_GROUP" invocation-numbers="0 1 2 3 4"/>
+          <include name="insertAccOrd_BlankP_P_PHONE" invocation-numbers="0"/>
+          <include name="insertAccOrd_Blank_P_DEALER_MAP_CD" invocation-numbers="0"/>
+          <include name="insertAccOrd_Invalid_P_DEALER_MAP_CD" invocation-numbers="0 1 2 3 4"/>
+          <include name="insertAccOrd_Blank_P_LOC_CD" invocation-numbers="0"/>
+          <include name="reportClosure"/>
+          <include name="insertAccOrd_Blank_P_CUST_FNAME" invocation-numbers="0"/>
+          <include name="insertAccOrd_Invalid_P_TOTAL_AMT" invocation-numbers="0"/>
+          <include name="insertAccOrd_Invalid_P_AMT_PAID" invocation-numbers="0"/>
+          <include name="insertAccOrd_Blank_P_AMT_PAID" invocation-numbers="0"/>
+          <include name="insertAccOrd_Invalid_P_LOC_CD" invocation-numbers="0 1 2 3 4"/>
+          <include name="insertAccOrd_Blank_P_APPOINT_TIME" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.ttn.MSGA.testcases.InsertAccOrdTest -->
+      <class name="com.ttn.MSGA.testcases.DealerDetailsTest">
+        <methods>
+          <include name="startReporting"/>
+          <include name="setPassword"/>
+          <include name="reportClosure"/>
+          <include name="tearDown"/>
+          <include name="setAccessToken"/>
+          <include name="dealerDetails_valid_P_DATE" invocation-numbers="0"/>
+          <include name="before"/>
+          <include name="dealerDetails_ValidInput" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.ttn.MSGA.testcases.DealerDetailsTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

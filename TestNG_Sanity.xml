@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+ 	<listeners>
+		<listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener" />
+	</listeners> 
+	<parameter name="SheetName" value="Sanity"></parameter>
+	<test thread-count="5" name="Test" preserve-order="true" parallel="tests">
+
+		<groups>
+			<run>
+				<include name="Sanity" />
+				
+				
+			</run>
+		</groups>
+		<classes>
+		 
+		 
+		                      <class name="com.ttn.MSGA.testcases.CityMasterTest" />
+		                      <class name="com.ttn.MSGA.testcases.GetEscDataAccTest" />                        
+                     	      <class name="com.ttn.MSGA.testcases.GetOrdEnqLineStatusTest" />     
+		                      <class name="com.ttn.MSGA.testcases.GetAccEnquiryTest" />  
+		                      <class name="com.ttn.MSGA.testcases.GetAccOrdTest" />
+                              <class name="com.ttn.MSGA.testcases.GetCategoryMasterTest" />     
+                              <class name="com.ttn.MSGA.testcases.GetSubCategoryMasterTest" />     
+                              <class name="com.ttn.MSGA.testcases.GetPartMasterTest" />     
+                        	  <class name="com.ttn.MSGA.testcases.GetModelVarMappingTest" />     
+                              <class name="com.ttn.MSGA.testcases.GetPartModelMappingTest" />     
+                              <class name="com.ttn.MSGA.testcases.StateMasterTest" /> 
+		                      <class name="com.ttn.MSGA.testcases.GetCommmonMasterTest" />
+	  		                  <class name="com.ttn.MSGA.testcases.InsertAccEnquiryTest" />  
+		   		              <class name="com.ttn.MSGA.testcases.InsertAccOrdTest" />   
+  		                      <class name="com.ttn.MSGA.testcases.FetchDealerDetailsTest" />  
+   	              		      <class name="com.ttn.MSGA.testcases.DealerDetailsTest" />    
+   	              		       
+   	              		       
+<!--    		              <class name="com.ttn.MSGA.testcases.BookingCancelTest" />    
+ -->   		         
+ 
+  		                         
+   		                 	  <class name="com.ttn.MSGP.testcases.GetEspDataTest" />    
+  		                	  <class name="com.ttn.MSGP.testcases.GetModelMasterTest" />     
+   		                	  <class name="com.ttn.MSGP.testcases.GenPartSrvEnqTest" />      
+     		                  <class name="com.ttn.MSGP.testcases.InsertAccEnquiryTest" />    
+  	                   	  	                        
+                                          
+               
+		</classes>
+	</test>
+</suite>
